@@ -416,3 +416,172 @@ body {
   font-weight: 700;
   font-family: "Pacifico", cursive;
 }
+
+.Section-7 {
+  margin-top: 5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.Section-7 .card-1 {
+  flex: 1;
+  height: 700px;
+  background-color: #fff5f5;
+  border-radius: 20px;
+}
+.Section-7 .card-1 .card-1-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  gap: 2rem;
+  margin-left: 5rem;
+}
+
+.card-1 .card-1-body .lists {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card-1-body .lists .list-item {
+  color: #341552;
+  font-family: General Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+}
+
+.Section-7 .card-1-heading {
+  color: #341552;
+  font-family: General Sans;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.Section-7 .card-1-para {
+  color: #341552;
+  font-family: General Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+.Section-7 .card-2 {
+  flex: 1;
+  height: 700px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+}
+.Section-7 .card-2 .card-2-body {
+  padding-top: 5rem;
+  margin-left: 5%;
+}
+
+.Section-7 .card-2-body .card-2-headings {
+  display: flex;
+  gap: 20rem;
+}
+
+.Section-7 .sub-cards {
+  display: flex;
+  gap: 2rem;
+}
+
+.Section-7 .sub-cards .sub-cards-1 {
+  margin-top: 2rem;
+  width: 341.017px;
+  height: 24rem;
+
+  background: #fafafa;
+}
+.Section-7 .sub-cards-1 .sub-card-1-body {
+  display: flex;
+  gap: 10px;
+  padding-top: 2rem;
+  margin-left: 5%;
+}
+.Section-7 .sub-cards-1 .sub-card-1-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border-right: 1px solid grey;
+}
+.Section-7 .sub-cards-1 .sub-card-heading {
+  color: #e74c3c;
+  font-family: General Sans;
+  font-size: 20.304px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.017px;
+  text-transform: uppercase;
+}
+
+.Section-7 .sub-cards .sub-cards-2 {
+  margin-top: 2rem;
+  width: 300px;
+  height: 24rem;
+
+  background: #fafafa;
+}
+.Section-7 .sub-cards-2 .sub-cards-2-heading {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  color: #e74c3c;
+  font-family: General Sans;
+  font-size: 20.304px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.017px;
+  text-transform: uppercase;
+}
+.Section-7 .sub-cards-2 .sub-cards-2-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.Section-7 .sub-cards-2-btns .sub-cards-2-btn {
+  display: flex;
+  gap: 3rem;
+}
+
+.Section-7 .sub-cards-2-btns .btn-design {
+  border-radius: 3.36px;
+  color: #fff;
+  padding: 4.2px 10.08px;
+}
+
+.Section-7 .sub-cards-2-btns .c-1 {
+  background-color: #11454d;
+}
+.Section-7 .sub-cards-2-btns .c-2 {
+  background-color: #336269;
+}
+.Section-7 .sub-cards-2-btns .c-3 {
+  background-color: #1af98e;
+}
+.Section-7 .sub-cards-2-btns .c-4 {
+  background-color: #76fbbb;
+}
+.Section-7 .sub-cards-2-btns .c-5 {
+  background-color: #00d166;
+}
+.Section-7 .sub-cards-2-btns .c-6 {
+  background-color: #00d166;
+}
+.Section-7 .sub-cards-2-btns .c-7 {
+  background-color: #e7eced;
+}
+.Section-7 .sub-cards-2-btns .c-8 {
+  background-color: #587d82;
+}
+.Section-7 .sub-cards-2-btns .c-9 {
+  background-color: #11454d;
+}
