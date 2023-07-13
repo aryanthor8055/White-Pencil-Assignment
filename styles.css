@@ -117,7 +117,7 @@ body {
 .Section-2 {
   margin-top: 3rem;
   width: 100%;
-  height: 65rem;
+  height: 62rem;
   border-radius: 36px;
   background: #fff3f3;
 }
@@ -132,6 +132,7 @@ body {
 }
 
 .Section-2 .Section-2-Headings .heading-1 {
+  flex: 1;
   color: #341552;
   font-family: sans-serif;
   font-size: 60px;
@@ -141,12 +142,14 @@ body {
 }
 
 .Section-2 .Section-2-Headings .heading-2 {
+  flex: 1;
   color: #341552;
   font-family: sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 34px;
+  margin-right: 3rem;
 }
 .Section-2 .Image-Section {
   display: flex;
