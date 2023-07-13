@@ -41,7 +41,7 @@ body {
   justify-content: space-evenly;
   gap: 30px;
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -56,12 +56,12 @@ body {
   padding: 14px 25px;
   gap: 10px;
   background: #8748c2;
-  border: 1px solid #fafafa;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   color: #ffffff;
   cursor: pointer;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -76,7 +76,7 @@ body {
 
 .head-section .Section-Heading {
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 600;
@@ -86,11 +86,11 @@ body {
 .head-section .section-btn {
   border: none;
   width: 298px;
-  height: 76px;
+  height: 70px;
   border-radius: 12px;
   background: #ff576d;
   color: #fff;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -100,9 +100,14 @@ body {
   cursor: pointer;
 }
 
+.head-section .section-btn svg {
+  padding-top: 2px;
+  margin-left: 10px;
+}
+
 .head-section .section-para {
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -128,7 +133,7 @@ body {
 
 .Section-2 .Section-2-Headings .heading-1 {
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 600;
@@ -137,7 +142,7 @@ body {
 
 .Section-2 .Section-2-Headings .heading-2 {
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -149,34 +154,92 @@ body {
   margin-top: 5rem;
 }
 
-.image-card {
-  display: flex;
-  gap: 2rem;
-  flex-direction: column;
-  align-items: center;
+.slider-container {
   width: 414px;
   height: 454px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
 
+.slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-item {
+  flex: 0 0 100%;
+  height: 100%;
+  position: relative;
+}
+.slider-item img {
+  border-radius: 20px;
+}
+
+.slider-item:first-child {
   border-radius: 24px;
   background: #f29090;
+  color: white;
 }
-.image-card .card-count {
-  color: #fff;
-  text-align: center;
-  font-family: General Sans;
+
+.slider-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.slider-content h2 {
   font-size: 128px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 92.446px;
-  margin-top: 4rem;
+  margin-bottom: 10px;
 }
-.image-card .card-subtitle {
-  color: #fff;
-  font-family: General Sans;
-  font-size: 27px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+
+.slider-content p {
+  font-size: 24px;
+}
+
+/* Slider navigation dots */
+
+.slider-dots {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  display: flex;
+}
+
+.slider-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 8px;
+
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.slider-dot:last-child {
+  margin-right: 0;
+}
+
+.slider-dot.active {
+  border-radius: 24px;
+  background-color: #f29090;
+}
+
+/* Optional: Add styles for the remaining slides */
+
+.slider-item:not(:first-child) {
+  border-radius: 24px;
+  background-color: #f2f2f2;
+}
+
+.slider-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .Section-2 .Section2-img {
@@ -192,7 +255,7 @@ body {
 
 .Section-3-Headings .heading-1 {
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 600;
@@ -200,7 +263,7 @@ body {
 }
 .Section-3-Headings .heading-2 {
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -210,7 +273,7 @@ body {
 .Section-3-Headings .heading-3 {
   margin-top: 5rem;
   color: #e74c3c;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -234,7 +297,7 @@ body {
 }
 .Section-3-Card .card-heading {
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 34px;
   font-style: normal;
   font-weight: 600;
@@ -243,7 +306,7 @@ body {
 }
 .Section-3-Card .card-para {
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -252,7 +315,7 @@ body {
 .Section-3 .Section-3-Card .card-images {
   display: flex;
   gap: 1rem;
-  margin-top: 10rem;
+  padding-top: 4rem;
 }
 
 .Section-4 {
@@ -272,20 +335,23 @@ body {
 }
 
 .Section-4-headings .heading-1 {
+  flex: 1;
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 600;
   line-height: 80px;
 }
 .Section-4-headings .heading-2 {
+  flex: 1;
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 34px;
+  margin-right: 3rem;
 }
 
 .Section-4-images {
@@ -314,7 +380,7 @@ body {
   border: 1px solid #82bbc2;
   background: #fff;
   color: #8fb8bd;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -326,7 +392,7 @@ body {
 
 .Section-4-images .card .card-heading {
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 34px;
   font-style: normal;
   font-weight: 600;
@@ -335,7 +401,7 @@ body {
 
 .Section-4-images .card .card-para {
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -356,7 +422,7 @@ body {
 
 .Section-5-Headings .heading-1 {
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 600;
@@ -364,7 +430,7 @@ body {
 }
 .Section-5-Headings .heading-2 {
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -374,7 +440,7 @@ body {
   width: 312px;
   height: 72px;
   color: #fff;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -384,6 +450,11 @@ body {
   border-radius: 12px;
   background: #ff576d;
   border: none;
+}
+
+.Section-5 .btn svg {
+  padding-top: 1rem;
+  padding-left: 0.7rem;
 }
 
 .Section-6 {
@@ -401,7 +472,7 @@ body {
 .Section-6 .heading {
   color: #341552;
   text-align: center;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 600;
@@ -425,7 +496,7 @@ body {
 
 .Section-7 .card-1 {
   flex: 1;
-  height: 700px;
+  height: 753px;
   background-color: #fff5f5;
   border-radius: 20px;
 }
@@ -444,7 +515,7 @@ body {
 }
 .card-1-body .lists .list-item {
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -453,7 +524,7 @@ body {
 
 .Section-7 .card-1-heading {
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 44px;
   font-style: normal;
   font-weight: 600;
@@ -462,7 +533,7 @@ body {
 
 .Section-7 .card-1-para {
   color: #341552;
-  font-family: General Sans;
+  font-family: sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -471,18 +542,24 @@ body {
 
 .Section-7 .card-2 {
   flex: 1;
-  height: 700px;
+  height: 753px;
   background-color: #f6f6f6;
   border-radius: 20px;
 }
 .Section-7 .card-2 .card-2-body {
-  padding-top: 5rem;
+  padding-top: 3rem;
   margin-left: 5%;
 }
 
 .Section-7 .card-2-body .card-2-headings {
   display: flex;
   gap: 20rem;
+  color: #341552;
+  font-family: sans-serif;
+  font-size: 16.329px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 31.715px;
 }
 
 .Section-7 .sub-cards {
@@ -493,95 +570,25 @@ body {
 .Section-7 .sub-cards .sub-cards-1 {
   margin-top: 2rem;
   width: 341.017px;
-  height: 24rem;
+  height: 248px;
 
   background: #fafafa;
 }
-.Section-7 .sub-cards-1 .sub-card-1-body {
-  display: flex;
-  gap: 10px;
-  padding-top: 2rem;
-  margin-left: 5%;
-}
-.Section-7 .sub-cards-1 .sub-card-1-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  border-right: 1px solid grey;
-}
-.Section-7 .sub-cards-1 .sub-card-heading {
-  color: #e74c3c;
-  font-family: General Sans;
-  font-size: 20.304px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 1.017px;
-  text-transform: uppercase;
+
+.Section-7 .sub-cards .sub-cards-1 img {
+  width: 341.017px;
+  height: 248px;
 }
 
 .Section-7 .sub-cards .sub-cards-2 {
   margin-top: 2rem;
   width: 300px;
-  height: 24rem;
+  height: 248px;
 
   background: #fafafa;
 }
-.Section-7 .sub-cards-2 .sub-cards-2-heading {
-  margin-top: 2rem;
-  margin-left: 3rem;
-  color: #e74c3c;
-  font-family: General Sans;
-  font-size: 20.304px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 1.017px;
-  text-transform: uppercase;
-}
-.Section-7 .sub-cards-2 .sub-cards-2-btns {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-  margin-top: 1rem;
-}
 
-.Section-7 .sub-cards-2-btns .sub-cards-2-btn {
-  display: flex;
-  gap: 3rem;
-}
-
-.Section-7 .sub-cards-2-btns .btn-design {
-  border-radius: 3.36px;
-  color: #fff;
-  padding: 4.2px 10.08px;
-}
-
-.Section-7 .sub-cards-2-btns .c-1 {
-  background-color: #11454d;
-}
-.Section-7 .sub-cards-2-btns .c-2 {
-  background-color: #336269;
-}
-.Section-7 .sub-cards-2-btns .c-3 {
-  background-color: #1af98e;
-}
-.Section-7 .sub-cards-2-btns .c-4 {
-  background-color: #76fbbb;
-}
-.Section-7 .sub-cards-2-btns .c-5 {
-  background-color: #00d166;
-}
-.Section-7 .sub-cards-2-btns .c-6 {
-  background-color: #00d166;
-}
-.Section-7 .sub-cards-2-btns .c-7 {
-  background-color: #e7eced;
-}
-.Section-7 .sub-cards-2-btns .c-8 {
-  background-color: #587d82;
-}
-.Section-7 .sub-cards-2-btns .c-9 {
-  background-color: #11454d;
+.Section-7 .sub-cards .sub-cards-2 img {
+  width: 300px;
+  height: 248px;
 }
